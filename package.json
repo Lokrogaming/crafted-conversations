@@ -1,0 +1,24 @@
+{
+  "name": "crafted-conversations",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Crafted Conversations – A Minecraft Podcast. Full experience (Vercel) + minimal GitHub Pages version in /docs.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "tailwindcss": "^4.0.0",
+    "vite": "^8.3.0"
+  }
+}
