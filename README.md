@@ -65,7 +65,9 @@ Für die GitHub-Pages-Version zusätzlich die Links in `docs/index.html` anpasse
 3. Build Command: `npm run build`, Output: `dist`
 4. Deploy → fertige URL in `docs/script.js` + hier unten eintragen
 
-**Live-URL:** _(nach Deploy eintragen)_
+**Live-URL (GitHub Pages, minimal):** https://lokrogaming.github.io/crafted-conversations/
+
+**Live-URL (Vercel, voll):** _(nach Deploy eintragen)_
 
 ### GitHub Pages (minimalistisch)
 
