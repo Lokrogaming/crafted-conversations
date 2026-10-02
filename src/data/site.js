@@ -51,10 +51,10 @@ export const TOPICS = [
 export const HOSTS = [
   {
     id: "host-one",
-    name: "Host One",
+    name: "Lokrogamer",
     role: "Host & Minecraft Enthusiast",
     bio: "Baut seit der Beta, redet gerne über Redstone und verliert sich regelmäßig in neuen Welten. Zuständig für Technik-Themen und tiefe Lore-Dives.",
-    initials: "H1",
+    initials: "LG",
     socials: [
       { label: "Spotify", href: SITE.links.spotify },
       { label: "Discord", href: SITE.links.discord },
@@ -62,10 +62,10 @@ export const HOSTS = [
   },
   {
     id: "host-two",
-    name: "Host Two",
+    name: "JamJam1312",
     role: "Host & Community Nerd",
     bio: "Lebt für Server-Communities, Events und gute Geschichten. Sammelt Chaos-Momente und bringt die Community-Stimmen in den Podcast.",
-    initials: "H2",
+    initials: "JJ",
     socials: [
       { label: "Spotify", href: SITE.links.spotify },
       { label: "Discord", href: SITE.links.discord },
