@@ -1,4 +1,4 @@
-# Crafted Conversations – A Minecraft Podcast
+# The Block – Der Minecraft-Podcast
 
 Moderne, hochwertige Podcast-Website – **minimalistisch auf GitHub Pages**, **volles Erlebnis auf Vercel**.
 
@@ -10,8 +10,8 @@ Moderne, hochwertige Podcast-Website – **minimalistisch auf GitHub Pages**, **
 ```
 crafted-conversations/
 ├── src/                    # Vollversion (Vercel)
-│   ├── data/site.js        # ← ZENTRALE CONFIG: Links, Episoden, Hosts, Topics
-│   ├── components/         # Navbar, Hero, Player, Episodes, About, Topics, Hosts, Community, Footer
+│   ├── data/site.js        # ← ZENTRALE CONFIG: Links, Hosts, Topics (EPISODES folgen zum Launch)
+│   ├── components/         # Navbar, Hero, Trailer, ComingSoon, About, Topics, Hosts, Community, Footer
 │   ├── App.jsx
 │   ├── main.jsx
 │   └── index.css           # Tailwind v4 Theme + Animationen
@@ -48,13 +48,18 @@ npm run preview
 
 Alles in **`src/data/site.js`**:
 
-- `SITE.links` – Podcast / YouTube / Discord / Spotify / RSS / Impressum / Datenschutz
-- `EPISODES` – neue Folge = neues Objekt (mit `audioSrc`, sobald echte Datei vorhanden)
+- `SITE.links` – Discord / Spotify / YouTube / Impressum / Datenschutz
+- `EPISODES` – aktuell leer (keine Folgen, nur Trailer unter `public/trailer.mp3`). Zum Launch: neues Objekt pro Folge ergänzen + Folgenliste wieder einblenden
 - `HOSTS` – Namen, Rollen, Bios, Socials
 - `TOPICS` – Themen-Cards
 
+**Logo:** Das angehängte Logo als `public/logo.png` (Vollversion) **und** `docs/logo.png`
+(Minimal-Version) ablegen – exakt diese Dateinamen, dann wird es automatisch verwendet
+(Navbar, Hero, Favicon, Social-Preview). Falls die Datei fehlt, greift ein dezenter Fallback.
+
 Für die GitHub-Pages-Version zusätzlich die Links in `docs/index.html` anpassen
-(YouTube / Discord / Spotify) und ggf. `docs/script.js` → Vercel-URL.
+(Discord / Spotify / YouTube) und ggf. `docs/script.js` → Vercel-URL.
+Der Trailer liegt als `docs/trailer.mp3` (Kopie von `public/trailer.mp3`) bei.
 
 ## Deploy
 
@@ -82,11 +87,11 @@ Automatisch via GitHub Actions (`.github/workflows/pages-minimal.yml`):
 - Keine externen Bilder – alles CSS/SVG (keine kaputten Assets möglich)
 - Accessibility: Skip-Link, ARIA-Labels, Fokus-Ringe, Kontraste, `prefers-reduced-motion`
 - Performance: keine schweren Dependencies, nur React + Tailwind, System-Fonts + 3 Google-Fonts mit `display=swap`
-- Player funktioniert ohne Backend (Dummy-Timer, später `audioSrc` setzen)
+- Trailer-Player mit echter MP3 (`public/trailer.mp3`, nativem `<audio>`-Element)
 
-## Links (Platzhalter)
+## Links
 
-Echte URLs in `src/data/site.js` eintragen:
-- YouTube: `https://youtube.com/@craftedconversations`
-- Discord: `https://discord.gg/craftedconversations`
-- Spotify: `https://open.spotify.com/show/craftedconversations`
+Echte URLs in `src/data/site.js` eingetragen:
+- Discord: `https://discord.gg/dPpRKbSYAh`
+- Spotify: `https://open.spotify.com/show/craftedconversations` (Platzhalter-Show, anpassen sobald live)
+- YouTube: `https://youtube.com/@lokrogamer`

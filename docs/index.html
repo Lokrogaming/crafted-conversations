@@ -3,95 +3,87 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Crafted Conversations – Der Minecraft-Podcast für Gespräche, Geschichten und alles dazwischen. Minimalistische Übersicht." />
+  <meta name="description" content="The Block – Der Minecraft-Podcast. Aktuell noch keine Folgen – hör dir schon mal den Trailer an. Der Launch ist in Vorbereitung." />
   <meta name="theme-color" content="#0a0c0a" />
-  <title>Crafted Conversations – A Minecraft Podcast</title>
+  <title>The Block – Der Minecraft-Podcast (bald verfügbar)</title>
+  <link rel="icon" type="image/png" href="./logo.png" />
   <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <a class="skip" href="#episoden">Zum Inhalt springen</a>
+  <a class="skip" href="#status">Zum Inhalt springen</a>
 
   <header class="nav" id="top">
     <div class="wrap nav-inner">
-      <a class="brand" href="#top" aria-label="Crafted Conversations – Home">
-        <span class="brand-block" aria-hidden="true"><i></i></span>
-        <span class="brand-text"><b>CRAFTED</b><small>CONVERSATIONS</small></span>
+      <a class="brand" href="#top" aria-label="The Block – Home">
+        <img class="brand-logo" src="./logo.png" alt="The Block Logo" width="32" height="32" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+        <span class="brand-block" style="display:none" aria-hidden="true"><i></i></span>
+        <span class="brand-text"><b>THE BLOCK</b><small>PODCAST</small></span>
       </a>
       <nav aria-label="Hauptnavigation">
-        <a href="#episoden">Episodes</a>
-        <a href="#about">About</a>
+        <a href="#status">Status</a>
+        <a href="#about">Über uns</a>
+        <a href="#themen">Themen</a>
         <a href="#hosts">Hosts</a>
       </nav>
-      <a class="btn-primary btn-sm" href="#hoeren">🎧 Listen</a>
+      <span class="pill-soon"><span class="dot-sm" aria-hidden="true"></span> Bald verfügbar</span>
     </div>
   </header>
 
   <main>
-    <!-- HERO minimal -->
+    <!-- HERO -->
     <section class="wrap hero">
-      <p class="kicker"><span class="dot" aria-hidden="true"></span> A Minecraft Podcast</p>
-      <h1>CRAFTED<br /><span>CONVERSATIONS</span></h1>
+      <img class="hero-logo" src="./logo.png" alt="The Block – Der Minecraft-Podcast" width="176" height="176" onerror="this.style.display='none'" />
+      <p class="kicker"><span class="dot" aria-hidden="true"></span> Bald verfügbar</p>
+      <h1>THE<br /><span>BLOCK</span></h1>
+      <p class="eyebrow">Der Minecraft-Podcast</p>
       <p class="tagline">Der Minecraft-Podcast für Gespräche, Geschichten und alles dazwischen.</p>
       <p class="subline">„Minecraft ist mehr als Blöcke. Es sind die Geschichten, Projekte, Server und Menschen dahinter.“</p>
       <div class="cta">
-        <a class="btn-primary" href="#hoeren">🎧 Podcast anhören</a>
-        <a class="btn-ghost" href="https://youtube.com/@craftedconversations" target="_blank" rel="noreferrer">▶ YouTube</a>
-        <a class="btn-ghost" href="https://discord.gg/craftedconversations" target="_blank" rel="noreferrer">💬 Discord</a>
+        <a class="btn-primary" href="https://discord.gg/dPpRKbSYAh" target="_blank" rel="noreferrer">Join Discord</a>
+        <a class="btn-ghost" href="https://open.spotify.com/show/craftedconversations" target="_blank" rel="noreferrer">Spotify</a>
+        <a class="btn-ghost" href="https://youtube.com/@lokrogamer" target="_blank" rel="noreferrer">YouTube</a>
       </div>
-      <p class="meta">■ Neue Folgen alle 2 Wochen · Spotify · YouTube · RSS</p>
+      <p class="notice">Aktuell gibt es noch keine Folgen – du findest uns daher noch nicht auf Spotify. Hör dir bis dahin schon mal <a href="#trailer">den Trailer an →</a></p>
     </section>
 
-    <!-- PLAYER minimal (statisch, Demo) -->
-    <section class="wrap" id="hoeren">
-      <div class="player">
-        <button class="play" id="playBtn" aria-label="Episode abspielen / pausieren">▶</button>
-        <div class="player-main">
-          <p class="player-kicker">Latest Episode · #01 · 20. Sep 2026 · 42:18</p>
-          <p class="player-title">„Willkommen bei Crafted Conversations“</p>
-          <div class="progress">
-            <span id="tCur">00:00</span>
-            <input type="range" id="seek" min="0" max="2538" value="0" aria-label="Wiedergabeposition" />
-            <span>42:18</span>
-          </div>
-          <p class="hint">Minimal-Version (GitHub Pages) – Demo-Player. Volles Erlebnis mit allen Folgen auf Vercel.</p>
+    <!-- TRAILER -->
+    <section class="wrap section" id="trailer">
+      <div class="trailer">
+        <p class="kicker">Trailer</p>
+        <h2>Schon mal reinhören</h2>
+        <p class="body">Noch keine Folge da? Hier ein erster Eindruck vom Podcast.</p>
+        <audio controls preload="metadata" src="./trailer.mp3">Dein Browser unterstützt leider kein Audio.</audio>
+      </div>
+    </section>
+
+    <!-- STATUS / COMING SOON -->
+    <section class="wrap section" id="status">
+      <div class="status">
+        <p class="kicker">Status</p>
+        <h2>Der Podcast startet bald</h2>
+        <p class="body">Es gibt aktuell noch keine Folgen – deshalb ist der Podcast auf Spotify noch nicht zu finden. Hör dir bis dahin schon mal den Trailer an – sobald die erste Folge erscheint, findest du hier automatisch die komplette Folgenliste.</p>
+        <div class="grid grid-3">
+          <div class="card"><p class="step">01</p><h3>Konzept steht</h3><p>Format, Themen und Rhythmus sind geplant – alle zwei Wochen eine neue Folge.</p></div>
+          <div class="card"><p class="step">02</p><h3>Erste Aufnahme läuft</h3><p>Wir nehmen gerade die ersten Gespräche auf und bauen alles in Ruhe auf.</p></div>
+          <div class="card"><p class="step">03</p><h3>Launch folgt</h3><p>Zum Start findest du uns hier und auf Spotify.</p></div>
         </div>
-        <a class="btn-ghost btn-sm" href="https://open.spotify.com/show/craftedconversations" target="_blank" rel="noreferrer">Spotify ↗</a>
-      </div>
-    </section>
-
-    <!-- EPISODEN -->
-    <section class="wrap section" id="episoden">
-      <p class="kicker">Archiv</p>
-      <h2>Latest Episodes</h2>
-      <div class="grid">
-        <article class="card">
-          <p class="ep-no">EP #01 · 20. Sep 2026 · 42:18</p>
-          <h3>„Willkommen bei Crafted Conversations“</h3>
-          <p>Wer sind wir, warum dieser Podcast, und was hat uns nach all den Jahren immer noch in Minecraft verliebt?</p>
-        </article>
-        <article class="card">
-          <p class="ep-no">EP #02 · 27. Sep 2026 · 58:04</p>
-          <h3>„Warum wir Minecraft immer noch lieben“</h3>
-          <p>Nostalgie, Updates, Mods, Server – was Minecraft nach über einem Jahrzehnt immer noch besonders macht.</p>
-        </article>
-        <article class="card">
-          <p class="ep-no">EP #03 · 04. Okt 2026 · 51:37</p>
-          <h3>„Die verrücktesten Minecraft-Projekte“</h3>
-          <p>Von 1:1-Erde bis Redstone-Computer – Builds und Projekte zum Staunen.</p>
-        </article>
-        <article class="card">
-          <p class="ep-no">EP #04 · 11. Okt 2026 · 1:03:52</p>
-          <h3>„Server, Community &amp; Chaos“</h3>
-          <p>Griefing, Großprojekte, Admin-Drama – warum Server das eigentliche Endgame sind.</p>
-        </article>
+        <div class="platforms">
+          <span class="platform">Spotify <em>Bald</em></span>
+        </div>
+        <div class="cta center">
+          <a class="btn-primary" href="#trailer">Trailer anhören</a>
+          <a class="btn-ghost" href="https://discord.gg/dPpRKbSYAh" target="_blank" rel="noreferrer">Launch nicht verpassen – Discord</a>
+          <a class="btn-ghost" href="https://open.spotify.com/show/craftedconversations" target="_blank" rel="noreferrer">Spotify</a>
+          <a class="btn-ghost" href="https://youtube.com/@lokrogamer" target="_blank" rel="noreferrer">YouTube</a>
+        </div>
       </div>
     </section>
 
     <!-- ABOUT -->
     <section class="wrap section" id="about">
-      <p class="kicker">About</p>
-      <h2>What is Crafted Conversations?</h2>
+      <p class="kicker">Über uns</p>
+      <h2>Was ist The Block?</h2>
       <p class="lead">Ein Podcast über Minecraft – aber nicht nur über das Spiel selbst.</p>
       <p class="body">Wir sprechen über Projekte, Communitys, Server, Updates, Erinnerungen, Trends und die Geschichten, die Minecraft seit Jahren begleiten.</p>
       <ul class="ticks">
@@ -101,10 +93,28 @@
       </ul>
     </section>
 
+    <!-- THEMEN -->
+    <section class="wrap section" id="themen">
+      <p class="kicker">Themen</p>
+      <h2>Worüber wir reden</h2>
+      <p class="body">Das erwartet dich zum Start – ehrliche Gespräche statt News-Ticker.</p>
+      <div class="grid grid-4">
+        <div class="card topic"><span aria-hidden="true">⛏️</span><h3>Minecraft</h3><p>Spiel, Updates &amp; Kultur</p></div>
+        <div class="card topic"><span aria-hidden="true">🎙️</span><h3>Community</h3><p>Stimmen aus der Szene</p></div>
+        <div class="card topic"><span aria-hidden="true">🌍</span><h3>Server</h3><p>SMPs, Events &amp; Drama</p></div>
+        <div class="card topic"><span aria-hidden="true">🧱</span><h3>Builds</h3><p>Architektur &amp; Redstone</p></div>
+        <div class="card topic"><span aria-hidden="true">⚙️</span><h3>Updates</h3><p>Patches &amp; Snapshots</p></div>
+        <div class="card topic"><span aria-hidden="true">🔥</span><h3>Stories</h3><p>Legenden &amp; Erinnerungen</p></div>
+        <div class="card topic"><span aria-hidden="true">💡</span><h3>Projekte</h3><p>Ideen zum Nachbauen</p></div>
+        <div class="card topic"><span aria-hidden="true">😂</span><h3>Chaos</h3><p>Fails &amp; Fun-Momente</p></div>
+      </div>
+    </section>
+
     <!-- HOSTS -->
     <section class="wrap section" id="hosts">
       <p class="kicker">Hosts</p>
-      <h2>Meet the Hosts</h2>
+      <h2>Wer hinter dem Mikro sitzt</h2>
+      <p class="body">Zwei Stimmen, ein Block – wir freuen uns auf den Launch mit euch.</p>
       <div class="grid">
         <article class="card host">
           <span class="avatar" aria-hidden="true">H1</span>
@@ -118,14 +128,15 @@
     </section>
 
     <!-- COMMUNITY -->
-    <section class="wrap section">
+    <section class="wrap section" id="community">
       <div class="community">
         <p class="kicker">Community</p>
-        <h2>Join the Conversation</h2>
-        <p>Der Podcast endet nicht nach der Episode. Diskutiere mit uns, teile deine Meinung und werde Teil der Community.</p>
+        <h2>Sei von Anfang an dabei</h2>
+        <p>Der Podcast startet bald. Komm jetzt schon auf den Discord, tausch dich aus und verpass keine Neuigkeiten zum Launch.</p>
         <div class="cta center">
-          <a class="btn-primary" href="https://discord.gg/craftedconversations" target="_blank" rel="noreferrer">💬 Join Discord</a>
-          <a class="btn-ghost" href="https://youtube.com/@craftedconversations" target="_blank" rel="noreferrer">＋ Follow us</a>
+          <a class="btn-primary" href="https://discord.gg/dPpRKbSYAh" target="_blank" rel="noreferrer">Join Discord</a>
+          <a class="btn-ghost" href="https://open.spotify.com/show/craftedconversations" target="_blank" rel="noreferrer">Spotify</a>
+          <a class="btn-ghost" href="https://youtube.com/@lokrogamer" target="_blank" rel="noreferrer">YouTube</a>
         </div>
       </div>
     </section>
@@ -133,7 +144,7 @@
     <!-- VERCEL Hinweis -->
     <section class="wrap section">
       <div class="vercel-hint">
-        <p><b>Das beste Erlebnis gibt's auf Vercel</b> – mit Player, Animationen und allen Details.</p>
+        <p><b>Das beste Erlebnis gibt's auf Vercel</b> – mit Animationen und allen Details.</p>
         <a class="btn-primary btn-sm" href="https://github.com/Lokrogaming/crafted-conversations#deploy" id="vercelLink">Vollversion öffnen ↗</a>
       </div>
     </section>
@@ -142,14 +153,14 @@
   <footer>
     <div class="wrap foot-grid">
       <div>
-        <p class="foot-brand">Crafted Conversations</p>
-        <p class="foot-sub">A Minecraft Podcast</p>
+        <p class="foot-brand">The Block</p>
+        <p class="foot-sub">Der Minecraft-Podcast · Launch in Vorbereitung</p>
       </div>
-      <nav aria-label="Podcast"><p>Podcast</p><a href="#top">Home</a><a href="#episoden">Episodes</a><a href="#about">About</a></nav>
-      <nav aria-label="Community"><p>Community</p><a href="https://discord.gg/craftedconversations" target="_blank" rel="noreferrer">Discord</a><a href="https://youtube.com/@craftedconversations" target="_blank" rel="noreferrer">YouTube</a><a href="https://open.spotify.com/show/craftedconversations" target="_blank" rel="noreferrer">Spotify</a></nav>
+      <nav aria-label="Podcast"><p>Podcast</p><a href="#top">Start</a><a href="#status">Status</a><a href="#about">Über uns</a></nav>
+      <nav aria-label="Community"><p>Community</p><a href="https://discord.gg/dPpRKbSYAh" target="_blank" rel="noreferrer">Discord</a><a href="https://open.spotify.com/show/craftedconversations" target="_blank" rel="noreferrer">Spotify</a><a href="https://youtube.com/@lokrogamer" target="_blank" rel="noreferrer">YouTube</a></nav>
       <nav aria-label="Rechtliches"><p>Legal</p><a href="#top">Impressum</a><a href="#top">Datenschutz</a></nav>
     </div>
-    <div class="wrap foot-bottom"><p>© 2026 Crafted Conversations</p><p>Minimal-Version für GitHub Pages · Vollversion auf Vercel</p></div>
+    <div class="wrap foot-bottom"><p>© 2026 The Block</p><p>Bald verfügbar – Launch in Vorbereitung</p></div>
   </footer>
 
   <script src="./script.js"></script>

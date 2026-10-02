@@ -8,15 +8,15 @@ const POINTS = [
 
 export default function About() {
   return (
-    <section id="about" className="scroll-mt-20 py-14 md:py-20 border-t border-white/8">
+    <section id="about" className="scroll-mt-20 py-14 md:py-20 border-t border-white/5">
       <div className="mx-auto max-w-6xl px-5 md:px-8 grid lg:grid-cols-[0.9fr_1.1fr] gap-10 items-start">
         <Reveal>
-          <p className="font-mono text-[12px] tracking-[0.25em] text-[#5ed951] uppercase">About</p>
+          <p className="font-mono text-[12px] tracking-[0.25em] text-[#5ed951] uppercase">Über uns</p>
           <h2 className="mt-2 font-display font-bold text-white text-[clamp(1.8rem,4vw,2.6rem)] tracking-tight leading-tight">
-            What is Crafted Conversations?
+            Was ist The Block?
           </h2>
           <p className="mt-5 text-[16px] leading-relaxed text-[#dfe5dd]">
-            Crafted Conversations ist ein Podcast über Minecraft – aber nicht nur über das Spiel selbst.
+            The Block ist ein Podcast über Minecraft – aber nicht nur über das Spiel selbst.
           </p>
           <p className="mt-4 text-[15px] leading-relaxed text-[#a7b0a6]">
             Wir sprechen über Projekte, Communitys, Server, Updates, Erinnerungen, Trends und die
@@ -29,7 +29,7 @@ export default function About() {
               <span className="w-3 h-3 rounded-[3px] bg-[#5ed951]/60" />
               <span className="w-3 h-3 rounded-[3px] bg-[#5ed951]/30" />
             </span>
-            <span className="font-mono text-[12px] text-[#6b756a]">EST. 2026 · DEUTSCH · ALLE 2 WOCHEN</span>
+            <span className="font-mono text-[12px] text-[#6b756a]">DEUTSCH · ALLE 2 WOCHEN NACH LAUNCH</span>
           </div>
         </Reveal>
         <div className="grid gap-4">

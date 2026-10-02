@@ -24,7 +24,7 @@ export default function Navbar() {
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#0a0c0a]/80 backdrop-blur-xl border-b border-white/10"
+          ? "bg-[#0a0c0a]/85 backdrop-blur-xl border-b border-white/10"
           : "bg-transparent border-b border-transparent"
       }`}
     >
@@ -34,7 +34,7 @@ export default function Navbar() {
       >
         <Logo />
 
-        <ul className="hidden md:flex items-center gap-8 text-[14px] font-medium text-[#a7b0a6]">
+        <ul className="hidden md:flex items-center gap-7 text-[14px] font-medium text-[#a7b0a6]">
           {SITE.nav.map((item) => (
             <li key={item.href}>
               <a
@@ -49,16 +49,17 @@ export default function Navbar() {
 
         <div className="hidden md:block">
           <a
-            href={SITE.links.podcast}
-            className="cc-btn-primary inline-flex items-center gap-2 rounded-xl px-5 py-2.5 text-[14px] font-semibold"
+            href="#status"
+            className="inline-flex items-center gap-2 rounded-full border border-[#5ed951]/40 bg-[#5ed951]/10 px-5 py-2.5 text-[13px] font-semibold text-[#5ed951]"
           >
-            <span aria-hidden="true">🎧</span> Listen Now
+            <span className="w-1.5 h-1.5 rounded-full bg-[#5ed951] animate-blink" aria-hidden="true" />
+            Bald verfügbar
           </a>
         </div>
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden grid place-items-center w-11 h-11 rounded-xl border border-white/12 bg-white/5"
+          className="md:hidden grid place-items-center w-11 h-11 rounded-xl border border-white/10 bg-white/5"
           onClick={() => setOpen((v) => !v)}
           aria-expanded={open}
           aria-label={open ? "Menü schließen" : "Menü öffnen"}
@@ -78,7 +79,7 @@ export default function Navbar() {
       {/* Mobile menu */}
       <div
         className={`md:hidden overflow-hidden transition-[max-height,opacity] duration-300 ${
-          open ? "max-h-[380px] opacity-100" : "max-h-0 opacity-0"
+          open ? "max-h-[440px] opacity-100" : "max-h-0 opacity-0"
         } bg-[#0a0c0a]/95 backdrop-blur-xl border-b border-white/10`}
       >
         <ul className="px-6 py-4 space-y-1 text-[16px]">
@@ -87,7 +88,7 @@ export default function Navbar() {
               <a
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="block py-3 border-b border-white/8 text-[#dfe5dd] hover:text-[#5ed951] hover:pl-1 transition-all"
+                className="block py-3 border-b border-white/5 text-[#dfe5dd] hover:text-[#5ed951] hover:pl-1 transition-all"
               >
                 {item.label}
               </a>
@@ -95,11 +96,12 @@ export default function Navbar() {
           ))}
           <li className="pt-3 pb-2">
             <a
-              href={SITE.links.podcast}
+              href="#status"
               onClick={() => setOpen(false)}
-              className="cc-btn-primary flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-semibold"
+              className="flex items-center justify-center gap-2 rounded-xl border border-[#5ed951]/40 bg-[#5ed951]/10 px-5 py-3 text-[14px] font-semibold text-[#5ed951]"
             >
-              <span aria-hidden="true">🎧</span> Listen Now
+              <span className="w-1.5 h-1.5 rounded-full bg-[#5ed951]" aria-hidden="true" />
+              Bald verfügbar
             </a>
           </li>
         </ul>

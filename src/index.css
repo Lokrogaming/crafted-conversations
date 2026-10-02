@@ -54,12 +54,12 @@ body {
   color: #fff;
 }
 
-/* subtle grid + vignette background */
+/* subtle grid + vignette background – bewusst dezent für einen cleanen Look */
 .cc-bg-grid {
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
-  background-size: 44px 44px;
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 48px 48px;
   mask-image: radial-gradient(ellipse 90% 70% at 50% 20%, black 40%, transparent 100%);
 }
 
@@ -71,16 +71,16 @@ body {
 }
 
 .cc-card {
-  background: linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.015));
-  border: 1px solid rgba(255, 255, 255, 0.09);
-  border-radius: 20px;
-  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.3s, box-shadow 0.3s, background 0.3s;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 22px;
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.3s, box-shadow 0.3s, background 0.3s;
 }
 
 .cc-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(94, 217, 81, 0.35);
-  box-shadow: 0 12px 40px -12px rgba(94, 217, 81, 0.25), 0 8px 24px -8px rgba(0, 0, 0, 0.6);
+  transform: translateY(-2px);
+  border-color: rgba(94, 217, 81, 0.28);
+  box-shadow: 0 12px 32px -16px rgba(94, 217, 81, 0.25), 0 8px 24px -8px rgba(0, 0, 0, 0.5);
 }
 
 .cc-btn-primary {
@@ -148,7 +148,7 @@ body {
   transform: translateY(0);
 }
 
-/* range input styling */
+/* range input styling (wird wieder aktiv, sobald die erste Folge da ist) */
 input[type="range"].cc-range {
   -webkit-appearance: none;
   appearance: none;

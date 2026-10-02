@@ -1,39 +1,52 @@
-export default function Logo({ compact = false }) {
+import { useState } from "react";
+
+// Nutzt das offizielle Logo aus `public/logo.png` (Vollversion)
+// bzw. `docs/logo.png` (Minimal-Version).
+// Falls die Datei noch nicht abgelegt wurde, greift automatisch
+// ein schlichter CSS-Fallback im gleichen Stil.
+function FallbackMark() {
   return (
-    <a href="#home" className="flex items-center gap-3 group" aria-label="Crafted Conversations – Home">
-      {/* Wordmark-Block: stilisierter Grasblock, rein CSS/SVG – kein Mojang-Asset */}
-      <span className="relative grid place-items-center w-9 h-9 rounded-[10px] overflow-hidden shrink-0 border border-white/15 bg-[#141814] group-hover:border-[#5ed951]/50 transition-colors" aria-hidden="true">
-        <svg viewBox="0 0 36 36" className="w-full h-full">
-          <rect x="0" y="0" width="36" height="36" fill="#1c241c" />
-          {/* dirt */}
-          <g fill="#2a332a">
-            <rect x="4" y="20" width="6" height="6" />
-            <rect x="14" y="24" width="6" height="6" />
-            <rect x="24" y="20" width="6" height="6" />
-            <rect x="9" y="28" width="5" height="5" />
-            <rect x="22" y="28" width="5" height="5" />
-          </g>
-          {/* grass top */}
-          <rect x="0" y="0" width="36" height="12" fill="#5ed951" />
-          <rect x="0" y="10" width="36" height="4" fill="#3fae3a" />
-          <g fill="#7cf06e">
-            <rect x="3" y="2" width="5" height="5" />
-            <rect x="14" y="4" width="4" height="4" />
-            <rect x="25" y="3" width="6" height="5" />
-          </g>
-          {/* pixel highlight = play hint */}
-          <rect x="15" y="17" width="4" height="4" fill="#c6ff4d" opacity="0.9" />
-          <rect x="15" y="21" width="4" height="4" fill="#c6ff4d" opacity="0.55" />
-          <rect x="19" y="19" width="4" height="4" fill="#c6ff4d" opacity="0.35" />
-        </svg>
-      </span>
+    <span
+      className="relative grid place-items-center w-9 h-9 rounded-[10px] overflow-hidden shrink-0 border border-white/10 bg-[#111311]"
+      aria-hidden="true"
+    >
+      <svg viewBox="0 0 36 36" className="w-full h-full">
+        <rect x="0" y="0" width="36" height="36" fill="#141714" />
+        <rect x="0" y="0" width="36" height="11" fill="#5ed951" />
+        <rect x="0" y="9" width="36" height="3" fill="#3fae3a" />
+        <rect x="13" y="15" width="7" height="7" fill="#5ed951" />
+        <rect x="20" y="17" width="6" height="6" fill="#5ed951" opacity="0.7" />
+        <rect x="13" y="24" width="7" height="6" fill="#232a23" />
+        <rect x="23" y="24" width="6" height="6" fill="#232a23" />
+      </svg>
+    </span>
+  );
+}
+
+export default function Logo({ compact = false }) {
+  const [imgOk, setImgOk] = useState(true);
+
+  return (
+    <a href="#home" className="flex items-center gap-3 group" aria-label="The Block – Home">
+      {imgOk ? (
+        <img
+          src="/logo.png"
+          alt="The Block – Der Minecraft-Podcast"
+          width={36}
+          height={36}
+          className="w-9 h-9 rounded-[10px] object-cover border border-white/10 bg-black shrink-0 group-hover:border-[#5ed951]/50 transition-colors"
+          onError={() => setImgOk(false)}
+        />
+      ) : (
+        <FallbackMark />
+      )}
       {!compact && (
         <span className="leading-none">
-          <span className="block font-display font-700 tracking-tight text-[15px] font-bold text-white">
-            CRAFTED
+          <span className="block font-display tracking-tight text-[15px] font-bold text-white">
+            THE BLOCK
           </span>
           <span className="block font-display text-[11px] tracking-[0.32em] text-[#5ed951] font-medium">
-            CONVERSATIONS
+            PODCAST
           </span>
         </span>
       )}

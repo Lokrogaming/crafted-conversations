@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Crafted Conversations – A Minecraft Podcast. Full experience (Vercel) + minimal GitHub Pages version in /docs.",
+  "description": "The Block – Der Minecraft-Podcast. Full experience (Vercel) + minimal GitHub Pages version in /docs.",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
