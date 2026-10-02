@@ -56,8 +56,7 @@ export const HOSTS = [
     bio: "Baut seit der Beta, redet gerne über Redstone und verliert sich regelmäßig in neuen Welten. Zuständig für Technik-Themen und tiefe Lore-Dives.",
     initials: "LG",
     socials: [
-      { label: "Spotify", href: SITE.links.spotify },
-      { label: "Discord", href: SITE.links.discord },
+      { label: "Spotify", href: "https://open.spotify.com/user/31tkflugeubcaiyibgslze2gycoy" },
     ],
   },
   {
@@ -67,8 +66,7 @@ export const HOSTS = [
     bio: "Lebt für Server-Communities, Events und gute Geschichten. Sammelt Chaos-Momente und bringt die Community-Stimmen in den Podcast.",
     initials: "JJ",
     socials: [
-      { label: "Spotify", href: SITE.links.spotify },
-      { label: "Discord", href: SITE.links.discord },
+      { label: "Spotify", href: "https://open.spotify.com/user/313k55ubp6wfbhbzscipse43bsci" },
     ],
   },
 ];
