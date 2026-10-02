@@ -93,5 +93,5 @@ Automatisch via GitHub Actions (`.github/workflows/pages-minimal.yml`):
 
 Echte URLs in `src/data/site.js` eingetragen:
 - Discord: `https://discord.gg/dPpRKbSYAh`
-- Spotify: `https://open.spotify.com/show/craftedconversations` (Platzhalter-Show, anpassen sobald live)
+- Spotify: `https://open.spotify.com/show/7CI5MdEEnKHI349d7jeYlX`
 - YouTube: `https://youtube.com/@lokrogamer`

@@ -15,7 +15,7 @@ export const SITE = {
   // Echte URLs hier eintragen, sobald vorhanden.
   links: {
     discord: "https://discord.gg/dPpRKbSYAh",
-    spotify: "https://open.spotify.com/show/craftedconversations",
+    spotify: "https://open.spotify.com/show/7CI5MdEEnKHI349d7jeYlX",
     youtube: "https://youtube.com/@lokrogamer",
     impressum: "#impressum",
     datenschutz: "#datenschutz",
